@@ -10,6 +10,10 @@ target/
 # TypeScript
 *.tsbuildinfo
 *.js.map
+*.d.ts
+
+# Logs
+*.log
 
 # Environment
 .env
@@ -22,13 +26,16 @@ target/
 *.swp
 *.swo
 
-# Logs
-*.log
+# OS
+.DS_Store
+Thumbs.db
 
-# Temp files
-*.tmp
+# Coverage
+coverage/
+htmlcov/
+.coverage
 
-# Python (if any Python files exist in the project)
+# Python (if present in project)
 __pycache__/
 *.pyc
 *.pyo
@@ -36,19 +43,20 @@ __pycache__/
 .Python
 venv/
 .venv/
-.env
+pip-log.txt
+pip-delete-this-directory.txt
 
-# Coverage
-coverage/
-htmlcov/
-.coverage
+# Testing
+.nyc_output/
+.mypy_cache/
+.pytest_cache/
+.jest/
 
-# OS
-.DS_Store
-Thumbs.db
+# Distribution / packaging
+*.tar.gz
+*.whl
 
-# Package manager
-.npm/
-.yarn/
-.pnpm-store/
+# Temporary files
+*.tmp
+*.temp
 ```
