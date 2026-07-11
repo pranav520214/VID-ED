@@ -1,65 +1,54 @@
 ```
 # Dependencies
 node_modules/
+
+# Build outputs
+dist/
+build/
 target/
 
-# Python
+# TypeScript
+*.tsbuildinfo
+*.js.map
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Temp files
+*.tmp
+
+# Python (if any Python files exist in the project)
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 .Python
-env/
 venv/
 .venv/
-.ENV
-.python-version
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.pytest_cache/
-.mypy_cache/
-.hypothesis/
-
-# Tauri
-**/tauri.conf.json
-**/Cargo.lock
-**/Cargo.toml.orig
-**/target/
-
-# Build outputs
-dist/
-build/
-*.min.js
-*.min.css
-
-# Environment variables
 .env
-.env.local
-.env.*
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*.tmp
+# Coverage
+coverage/
+htmlcov/
+.coverage
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
-
-# Coverage
-coverage/
-htmlcov/
+# Package manager
+.npm/
+.yarn/
+.pnpm-store/
 ```
