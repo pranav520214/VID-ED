@@ -1,0 +1,41 @@
+{
+  "name": "vid-ed-x",
+  "version": "0.1.0",
+  "private": true,
+  "description": "VID-ED X — AI-Native Universal Video Editing Platform",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "servers/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev:desktop",
+    "dev:desktop": "npm run dev -w @vid-ed-x/desktop",
+    "dev:web": "npm run dev -w @vid-ed-x/web",
+    "build": "npm run build:desktop && npm run build:web",
+    "build:desktop": "npm run build -w @vid-ed-x/desktop",
+    "build:web": "npm run build -w @vid-ed-x/web",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf apps/*/dist apps/*/node_modules packages/*/dist servers/*/dist node_modules",
+    "tauri": "npm run tauri -w @vid-ed-x/desktop"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-react": "^7.37.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "rimraf": "^6.0.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "packageManager": "npm@10.8.0"
+}
