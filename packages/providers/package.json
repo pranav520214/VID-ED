@@ -1,0 +1,22 @@
+{
+  "name": "@vid-ed-x/providers",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@vid-ed-x/core": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}

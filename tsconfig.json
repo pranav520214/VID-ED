@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "composite": true,
+    "incremental": true,
+    "baseUrl": ".",
+    "paths": {
+      "@vid-ed-x/core": ["packages/core/src"],
+      "@vid-ed-x/timeline": ["packages/timeline/src"],
+      "@vid-ed-x/mcp-client": ["packages/mcp-client/src"],
+      "@vid-ed-x/ui": ["packages/ui/src"],
+      "@vid-ed-x/providers": ["packages/providers/src"],
+      "@vid-ed-x/plugins": ["packages/plugins/src"],
+      "@vid-ed-x/integrations/clipchamp": ["packages/integrations/clipchamp/src"],
+      "@vid-ed-x/integrations/premiere": ["packages/integrations/premiere/src"],
+      "@vid-ed-x/integrations/openshot": ["packages/integrations/openshot/src"]
+    }
+  },
+  "include": [
+    "apps/**/*",
+    "packages/**/*",
+    "servers/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/dist/**",
+    "**/build/**",
+    "**/target/**"
+  ]
+}
