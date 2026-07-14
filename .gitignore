@@ -1,65 +1,39 @@
 ```
 # Dependencies
-node_modules/
-target/
-
-# Python
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
-.Python
-env/
 venv/
 .venv/
-.ENV
-.python-version
-pip-log.txt
-pip-delete-this-directory.txt
-.tox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.log
-.pytest_cache/
-.mypy_cache/
-.hypothesis/
-
-# Tauri
-**/tauri.conf.json
-**/Cargo.lock
-**/Cargo.toml.orig
-**/target/
-
-# Build outputs
-dist/
-build/
-*.min.js
-*.min.css
-
-# Environment variables
 .env
 .env.local
 .env.*
 
-# IDE
+# Build artifacts
+dist/
+build/
+*.egg-info/
+
+# Editors
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
-
-# OS
-.DS_Store
-Thumbs.db
 
 # Logs
 *.log
 
 # Coverage
+.coverage
 coverage/
 htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Testing
+.pytest_cache/
+.mypy_cache/
 ```
